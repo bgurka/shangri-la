@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "functions.h"
+
+int main(int argc, char *argv[]) {
+  
+  if (argc == 2) {
+    printf("error 404. Need args");
+    return 0;
+  }
+  int mod = atoi(argv[1]);
+  int count = atoi(argv[2]);
+  write(mod, count);
+  read(count);
+}
